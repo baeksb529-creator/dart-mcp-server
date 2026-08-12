@@ -26,7 +26,7 @@ import zipfile
 from typing import Optional
 
 import requests
-from mcp.server.fastmcp import FastMCP
+from fastmcp import FastMCP
 
 DART_API_KEY = os.environ.get("DART_API_KEY", "")
 BASE_URL = "https://opendart.fss.or.kr/api"
