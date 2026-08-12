@@ -215,4 +215,4 @@ def get_financial_statement(
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))
     # Replit 등 원격 호스팅 환경을 위해 streamable-http transport 사용
-    mcp.run(transport="streamable-http", host="0.0.0.0", port=port)
+    mcp.run(transport="http", host="0.0.0.0", port=port, path="/mcp")
